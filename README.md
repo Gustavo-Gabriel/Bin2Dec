@@ -21,9 +21,16 @@ Esse desafio exige que o desenvolvedor que o implemente, siga as seguintes restr
 ## Recursos Bônus
 
 - [ ] O usuário pode inserir um número variável de dígitos binários.
+- [ ] O usuário não pode inserir nada além de 0 ou 1.
 
 ## Links e Recursos úteis
 [Sistema de Numeração Binária](https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_bin%C3%A1rio)
 
 ## Exemplo de Projetos
 * [Programa de conversão de binário para decimal para iniciantes em inglês](https://www.youtube.com/watch?v=YMIALQE26KQ)
+
+* [Conversor de binário em decimal usando React](https://github.com/email2vimalraj/Bin2Dec)
+
+* [Conversor de binário para decimal com html, css e js simples](https://grfreire.github.io/Bin2Dec/)
+
+* [Conversor de binário para decimal usando Flutter e Dart](https://github.com/israelss/AppIdeasCollection/tree/master/Tier1/Bin2Dec)
