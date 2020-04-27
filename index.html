@@ -14,16 +14,16 @@
                 <h2>Conversor de Binário para Decimal</h2>
                 <div class="entrada">
                     <p>Binário</p>
-                    <input type="text" placeholder="Entre com um número binário" maxlength="8" onkeypress='return event.charCode >= 48 && event.charCode <= 49'> 
+                    <input id="binario" type="text" placeholder="Entre com um número binário" maxlength="8" onkeypress='return event.charCode >= 48 && event.charCode <= 49'> 
                 </div>
 
                 <div class="entrada">
                     <p>Decimal</p>
-                    <input type="text" disabled> 
+                    <input id="decimal" type="text" disabled> 
                 </div>
 
                 <div class="btn">
-                    <button>Converter</button>
+                    <button onclick="binToDec()">Converter</button>
                 </div>
                 
                 
