@@ -9,19 +9,54 @@ html, body{
 }
 
 .center{
-    width: 1280px;
+    width: 50%;
     margin: 20px auto;
+    
+   
 }
 
 .box{
     border: 1px solid #cccccc;
+    /* COMO CENTRALIZAR NA VERTICAL */
+    top: 50%;
+    transform: translate(0, 50%);
+    
 }
 
 .box h1, .box h2{
     text-align: center;
+    margin-top: 20px;
 }
 
 .box h2{
-    
+    font-weight: normal;
 }
 
+.box .entrada{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box .entrada p{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.box .entrada input{
+    font-size: 20px;
+    padding: 5px;
+    width: 70%;
+}
+
+.box .btn{
+   text-align: center;
+   margin: 20px 0;
+}
+
+.box .btn button{
+    padding: 5px;
+    width: 10%;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+}
