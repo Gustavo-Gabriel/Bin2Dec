@@ -15,13 +15,13 @@ Esse desafio exige que o desenvolvedor que o implemente, siga as seguintes restr
 ## Histórias do Usuário
 
 - [x] O usuário pode inserir até 8 dígitos binários em um campo de entrada.
-- [ ] O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido.
+- [x] O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido.
 - [ ] O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido.
 
 ## Recursos Bônus
 
 - [ ] O usuário pode inserir um número variável de dígitos binários.
-- [ ] O usuário não pode inserir nada além de 0 ou 1.
+- [x] O usuário não pode inserir nada além de 0 ou 1.
 
 ## Links e Recursos úteis
 [Sistema de Numeração Binária](https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_bin%C3%A1rio)
