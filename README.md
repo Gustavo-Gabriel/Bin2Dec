@@ -20,7 +20,7 @@ Esse desafio exige que o desenvolvedor que o implemente, siga as seguintes restr
 
 ## Recursos Bônus
 
-- [ ] O usuário pode inserir um número variável de dígitos binários.
+- [X] O usuário pode inserir um número variável de dígitos binários.
 - [x] O usuário não pode inserir nada além de 0 ou 1.
 
 ## Links e Recursos úteis

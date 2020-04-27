@@ -17,6 +17,7 @@ html, body{
 
 .box{
     border: 1px solid #cccccc;
+    border-radius: 2%;
     /* COMO CENTRALIZAR NA VERTICAL */
     top: 50%;
     transform: translate(0, 50%);
