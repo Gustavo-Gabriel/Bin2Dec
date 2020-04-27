@@ -14,7 +14,7 @@ Esse desafio exige que o desenvolvedor que o implemente, siga as seguintes restr
 
 ## Histórias do Usuário
 
-- [ ] O usuário pode inserir até 8 dígitos binários em um campo de entrada.
+- [ x ] O usuário pode inserir até 8 dígitos binários em um campo de entrada.
 - [ ] O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido.
 - [ ] O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido.
 
