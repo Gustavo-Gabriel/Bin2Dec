@@ -12,3 +12,16 @@ html, body{
     width: 1280px;
     margin: 20px auto;
 }
+
+.box{
+    border: 1px solid #cccccc;
+}
+
+.box h1, .box h2{
+    text-align: center;
+}
+
+.box h2{
+    
+}
+
