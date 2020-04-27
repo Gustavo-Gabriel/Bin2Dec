@@ -7,3 +7,8 @@
 html, body{
     height: 100%;
 }
+
+.center{
+    width: 1280px;
+    margin: 20px auto;
+}
