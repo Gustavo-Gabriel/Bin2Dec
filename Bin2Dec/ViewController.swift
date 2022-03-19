@@ -2,9 +2,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let containerView: View = View()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
+    }
 
-        view.backgroundColor = .red
+    override func loadView() {
+        view = containerView
     }
 }
