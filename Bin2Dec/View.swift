@@ -17,12 +17,12 @@ final class View: UIView {
 
         return label
     }()
-    
+
     override init(frame: CGRect = .zero) {
         super.init(frame: .zero)
         setup()
     }
-    
+
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -33,6 +33,7 @@ final class View: UIView {
         
         buildViewHierarchy()
         setupConstraints()
+        addActions()
     }
     
     private func buildViewHierarchy() {
@@ -52,5 +53,15 @@ final class View: UIView {
             $0.left.equalTo(self).offset(16)
             $0.right.equalTo(self).offset(-16)
         }
+    }
+
+    private func addActions() {
+        binaryTextField.delegate = self
+    }
+}
+
+extension View: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.endEditing(true)
     }
 }
