@@ -6,6 +6,7 @@ final class View: UIView {
         let textField = UITextField()
         textField.placeholder = "Digite um número binário"
         textField.borderStyle = .line
+        textField.keyboardType = .numberPad
 
         return textField
     }()
@@ -43,7 +44,7 @@ final class View: UIView {
     
     private func setupConstraints() {
         binaryTextField.snp.makeConstraints {
-            $0.centerY.equalTo(self)
+            $0.top.equalTo(self).offset(40)
             $0.left.equalTo(self).offset(16)
             $0.right.equalTo(self).offset(-16)
         }
@@ -61,7 +62,7 @@ final class View: UIView {
 }
 
 extension View: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return textField.endEditing(true)
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        decimalLabel.text = binaryTextField.text
     }
 }
