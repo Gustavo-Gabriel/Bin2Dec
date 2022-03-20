@@ -15,6 +15,7 @@
 		F1C3DF6627E66712009EE6ED /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C3DF6527E66712009EE6ED /* SnapKit */; };
 		F1C3DF6827E66757009EE6ED /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3DF6727E66757009EE6ED /* View.swift */; };
 		F1C3DF6B27E66EE2009EE6ED /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3DF6A27E66EE2009EE6ED /* UIViewController+Ext.swift */; };
+		F1C3DF6D27E6889B009EE6ED /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3DF6C27E6889B009EE6ED /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F1C3DF5E27E663E5009EE6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C3DF6727E66757009EE6ED /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F1C3DF6A27E66EE2009EE6ED /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		F1C3DF6C27E6889B009EE6ED /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C3DF6A27E66EE2009EE6ED /* UIViewController+Ext.swift */,
+				F1C3DF6C27E6889B009EE6ED /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C3DF6D27E6889B009EE6ED /* String+Ext.swift in Sources */,
 				F1C3DF6827E66757009EE6ED /* View.swift in Sources */,
 				F1C3DF5527E663E1009EE6ED /* ViewController.swift in Sources */,
 				F1C3DF6B27E66EE2009EE6ED /* UIViewController+Ext.swift in Sources */,

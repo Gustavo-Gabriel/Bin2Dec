@@ -13,7 +13,6 @@ final class View: UIView {
 
     private let decimalLabel: UILabel = {
         let label = UILabel()
-        label.text = "Texto de Teste"
         label.textAlignment = .center
 
         return label
@@ -63,7 +62,14 @@ final class View: UIView {
 
 extension View: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        decimalLabel.text = binaryTextField.text
+        if let binaryText = binaryTextField.text {
+            if binaryText.isBinary {
+                if let decimalNumber = Int(binaryText, radix: 2) {
+                    decimalLabel.text = "\(binaryText) em decimal é \(decimalNumber)"
+                    decimalLabel.textColor = .label
+                }
+            }
+        }
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -72,6 +78,12 @@ extension View: UITextFieldDelegate {
         guard let stringRange = Range(range, in: currentText) else { return false }
 
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+
+        if updatedText.isEmpty {
+            decimalLabel.text = ""
+            return true
+        }
+        if !updatedText.isBinary { return false }
 
         return updatedText.count <= 8
     }
