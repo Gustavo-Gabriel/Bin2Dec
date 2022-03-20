@@ -14,6 +14,7 @@ final class View: UIView {
     private let decimalLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.numberOfLines = 0
 
         return label
     }()
@@ -49,7 +50,7 @@ final class View: UIView {
         }
         
         decimalLabel.snp.makeConstraints {
-            $0.bottomMargin.equalTo(binaryTextField).offset(40)
+            $0.top.equalTo(binaryTextField).offset(40)
             $0.left.equalTo(self).offset(16)
             $0.right.equalTo(self).offset(-16)
         }
@@ -83,8 +84,9 @@ extension View: UITextFieldDelegate {
             decimalLabel.text = ""
             return true
         }
+
         if !updatedText.isBinary { return false }
 
-        return updatedText.count <= 8
+        return true
     }
 }
