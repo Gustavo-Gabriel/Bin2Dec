@@ -62,14 +62,13 @@
 		F1C3DF4F27E663E1009EE6ED /* Bin2Dec */ = {
 			isa = PBXGroup;
 			children = (
+				F1C3DF7027E6AF69009EE6ED /* AppBuilder */,
+				F1C3DF6F27E6AF51009EE6ED /* Controller */,
+				F1C3DF6E27E6AF32009EE6ED /* View */,
 				F1C3DF6927E66E5C009EE6ED /* Extensions */,
-				F1C3DF5027E663E1009EE6ED /* AppDelegate.swift */,
-				F1C3DF5227E663E1009EE6ED /* SceneDelegate.swift */,
-				F1C3DF5427E663E1009EE6ED /* ViewController.swift */,
 				F1C3DF5927E663E5009EE6ED /* Assets.xcassets */,
 				F1C3DF5B27E663E5009EE6ED /* LaunchScreen.storyboard */,
 				F1C3DF5E27E663E5009EE6ED /* Info.plist */,
-				F1C3DF6727E66757009EE6ED /* View.swift */,
 			);
 			path = Bin2Dec;
 			sourceTree = "<group>";
@@ -81,6 +80,31 @@
 				F1C3DF6C27E6889B009EE6ED /* String+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1C3DF6E27E6AF32009EE6ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3DF6727E66757009EE6ED /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1C3DF6F27E6AF51009EE6ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3DF5427E663E1009EE6ED /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F1C3DF7027E6AF69009EE6ED /* AppBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3DF5027E663E1009EE6ED /* AppDelegate.swift */,
+				F1C3DF5227E663E1009EE6ED /* SceneDelegate.swift */,
+			);
+			path = AppBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

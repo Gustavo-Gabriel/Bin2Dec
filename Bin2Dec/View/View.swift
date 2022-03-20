@@ -66,7 +66,7 @@ extension View: UITextFieldDelegate {
         if let binaryText = binaryTextField.text {
             if binaryText.isBinary {
                 if let decimalNumber = Int(binaryText, radix: 2) {
-                    decimalLabel.text = "\(binaryText) em decimal é \(decimalNumber)"
+                    decimalLabel.text = "\(binaryText) na base decimal é \(decimalNumber)"
                     decimalLabel.textColor = .label
                 }
             }
